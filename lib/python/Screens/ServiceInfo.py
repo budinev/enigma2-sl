@@ -188,7 +188,7 @@ class ServiceInfo(Screen):
 				self.subList = self.getSubtitleList()
 				self.togglePIDButton()
 				trackList = self.getTrackList()
-				fillList = fillList + ([(_("Namespace"), self.getServiceInfoValue(iServiceInformation.sNamespace), TYPE_VALUE_HEX, 8),
+				fillList = fillList + ([(_("Namespace & Orbital pos."), self.namespace(self.getServiceInfoValue(iServiceInformation.sNamespace)), TYPE_TEXT),
 					(_("TSID"), self.getServiceInfoValue(iServiceInformation.sTSID), TYPE_VALUE_HEX_DEC, 4),
 					(_("ONID"), self.getServiceInfoValue(iServiceInformation.sONID), TYPE_VALUE_HEX_DEC, 4),
 					(_("Service ID"), self.getServiceInfoValue(iServiceInformation.sSID), TYPE_VALUE_HEX_DEC, 4),
@@ -203,6 +203,20 @@ class ServiceInfo(Screen):
 		elif self.transponder_info:
 			self.fillList(self.getFEData(self.transponder_info))
 
+	def namespace(self, nmspc):
+		namespace = "%08X" % (to_unsigned(nmspc))
+		if namespace[:4] == "EEEE":
+			return "%s - DVB-T" % (namespace)
+		elif namespace[:4] == "FFFF":
+			return "%s - DVB-C" % (namespace)
+		else:
+			EW = "E"
+			posi = int(namespace[:4], 16)
+			if posi > 1800:
+				posi = 3600 - posi
+				EW = "W"
+		return "%s - %s\xc2\xb0 %s" % (namespace, (float(posi) / 10.0), EW) 
+
 	def getTrackList(self):
 		trackList = []
 		currentTrack = self.audio.getCurrentTrack()
@@ -210,11 +224,11 @@ class ServiceInfo(Screen):
 			for i in range(0, self.numberofTracks):
 				audioDesc = self.audio.getTrackInfo(i).getDescription()
 				audioPID = self.audio.getTrackInfo(i).getPID()
-				audioLang = self.audio.getTrackInfo(i).getLanguage().upper()
+				audioLang = self.audio.getTrackInfo(i).getLanguage()
 				if audioLang == "":
 					audioLang = "Not Defined"
 				if self.showAll or currentTrack == i:
-					trackList += [(_("Audio PID%s, codec & lang" % ((" %s") % (i + 1) if self.numberofTracks > 1 and self.showAll else "")), "%04X (%d) - %s - %s" % (to_unsigned(audioPID), audioPID, audioDesc, audioLang), TYPE_TEXT)]
+					trackList += [(_("Audio PID%s, codec & lang") % ((" %s") % (i + 1) if self.numberofTracks > 1 and self.showAll else ""), "%04X (%d) - %s - %s" % (to_unsigned(audioPID), audioPID, audioDesc, audioLang), TYPE_TEXT)]
 				if self.getServiceInfoValue(iServiceInformation.sAudioPID) == "N/A":
 					trackList = [(_("Audio PID, codec & lang"), "N/A - %s - %s" % (audioDesc, audioLang), TYPE_TEXT)] 
 		else:
@@ -241,7 +255,7 @@ class ServiceInfo(Screen):
 			subNumber = str(x[1])
 			subPID = x[1]
 			subLang = ""
-			subLang = x[4].upper()
+			subLang = x[4]
 
 			if x[0] == 0:  # DVB PID
 				subNumber = "%04X" % (x[1])
