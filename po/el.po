@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-25 06:50+0200\n"
+"POT-Creation-Date: 2019-06-26 23:01+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliotG <mcelliotg@gmail.com>\n"
 "Language-Team: MCelliotG <mcelliotg@gmail.com>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -406,6 +406,10 @@ msgstr "%s %s ελεύθερος χώρος δίσκου"
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
+
+#, fuzzy, python-format
+msgid "%s imported from fallback tuner"
+msgstr "Ενεργοποίηση εισαγωγής χρονοδιακόπτη από το εφεδρικό tuner"
 
 #. TRANSLATORS: The satellite with name '%s' is no longer used after a configuration change. The user is asked whether or not the satellite should be deleted.
 #, python-format
@@ -1561,6 +1565,21 @@ msgid ""
 "Screens change with left/right buttons or use red, green, blue to toggle.\n"
 "Yellow for returning back to this intro"
 msgstr ""
+"Μπορεί να χρησιμοποιηθεί για τον έλεγχο των ελαττωματικών pixels στην οθόνη της TV.\n"
+"\n"
+"Διαθέσιμες οθόνες δοκιμής χρωμάτων:\n"
+"\n"
+"κόκκινο\n"
+"πράσινο\n"
+"μπλε\n"
+"λευκό\n"
+"μαύρο\n"
+"κυανό\n"
+"ματζέντα\n"
+"κίτρινο\n"
+"\n"
+"Οι οθόνες εναλλάσσονται με τα πλήκτρα αριστερά/δεξιά ή τη χρήση των πλήκτρων κόκκινο, πράσινο ή μπλε.\n"
+"Με το κίτρινο επιστρέφετε στην αρχική οθόνη"
 
 msgid "Can only find a network drive to store the backup this means after the flash the autorestore will not work. Alternativaly you can mount the network drive after the flash and perform a manufacurer reset to autorestore"
 msgstr "Η εφεδρεία δεν θα λειτουργήσει μετά το φλασάρισμα αν υπάρχει μόνο δίσκος δικτύου για την αποθήκευση του αντιγράφου ασφαλείας. Εναλλακτικά μπορείτε να μοντάρετε το δίσκο δικτύου μετά το φλασάρισμα και να κάνετε εργοστασιακή επαναφορά για να γίνει η αυτόματη εφεδρεία"
@@ -1684,13 +1703,6 @@ msgstr "Αριθμός καναλιού, λογότυπο και όνομα υπ
 
 msgid "Channels and EPG"
 msgstr "Κανάλια και EPG"
-
-#, python-format
-msgid "Channels from fallback tuner failed %s"
-msgstr "Αποτυχία καναλιών από το εφεδρικό tuner %s"
-
-msgid "Channels from fallback tuner imported"
-msgstr "Έγινε εισαγωγή των καναλιών από το εφεδρικό tuner"
 
 msgid "Channels only"
 msgstr "Μόνο κανάλια"
@@ -2483,9 +2495,8 @@ msgstr "Αναπαραγωγή DVD"
 msgid "DVD titlelist"
 msgstr "Λίστα τίτλων DVD"
 
-#, fuzzy
 msgid "DVDPlayer"
-msgstr "Αναπαραγωγή DVD"
+msgstr "Αναπαραγωγός DVD"
 
 msgid "Danish"
 msgstr "Δανικά"
@@ -3946,7 +3957,7 @@ msgid "HDMI Colordepth"
 msgstr "Βάθος χρώματος HDMI"
 
 msgid "HDMI Colorimetry"
-msgstr "HDMI Xρωματομετρία"
+msgstr "Xρωματομετρία HDMI"
 
 msgid "HDMI Colorspace"
 msgstr "Χρωματικό εύρος HDMI"
@@ -3955,10 +3966,10 @@ msgid "HDMI HDR Type"
 msgstr "Τύπος HDMI HDR"
 
 msgid "HDMI-CEC Source Active"
-msgstr "HDMI-CEC Πηγή Ενεργή"
+msgstr "HDMI-CEC Πηγή ενεργή"
 
 msgid "HDMI-CEC Source Inactive"
-msgstr "HDMI-CEC Πηγή Ανενεργή"
+msgstr "HDMI-CEC Πηγή ανενεργή"
 
 msgid "HDMI-CEC setup"
 msgstr "Ρύθμιση HDMI-CEC"
@@ -4093,7 +4104,7 @@ msgid "Hotkey zap"
 msgstr "Ζάπινγκ Hotkey"
 
 msgid "Hotplug"
-msgstr ""
+msgstr "Σύνδεση και άμεση λειτουργία"
 
 msgid "How many minutes do you want add to the recording?"
 msgstr "Πόσα λεπτά θέλετε να προστεθούν στην εγγραφή;"
@@ -4223,8 +4234,9 @@ msgstr "Εισαγωγή καναλιών ή/και EPG από την απομα
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr "Εισαγωγή καναλιών ή/και EPG από την απομακρυσμένη URL δέκτη κατά την εκκίνηση του δέκτη ή του enigma2"
 
-msgid "Import channels from fallback tuner"
-msgstr "Εισαγωγή καναλιών από το εφεδρικό tuner"
+#, fuzzy, python-format
+msgid "Import from fallback tuner failed, %s"
+msgstr "Αποτυχία καναλιών από το εφεδρικό tuner %s"
 
 msgid "Import from remote receiver URL"
 msgstr "Εισαγωγή από απομακρυσμένη URL δέκτη"
@@ -4819,6 +4831,10 @@ msgstr "Χειροκίνητη ανίχνευση"
 msgid "Manual transponder"
 msgstr "Χειροκίνητος αναμεταδότης"
 
+#, fuzzy
+msgid "Manually import from fallback tuner"
+msgstr "Ενεργοποίηση εισαγωγής χρονοδιακόπτη από το εφεδρικό tuner"
+
 msgid "Manufacturer"
 msgstr "Κατασκευαστής"
 
@@ -5250,9 +5266,8 @@ msgstr "Μη διαθέσιμα ECMPids (FTA Υπηρεσία)"
 msgid "No HDD found or HDD not initialized!"
 msgstr "Δεν βρέθηκε σκληρός δίσκος ή δεν έχει γίνει αρχικοποίηση!"
 
-#, fuzzy
 msgid "No active subservices available."
-msgstr "Δεν υπάρχουν διαθέσιμες ενημερώσεις"
+msgstr "Μη διαθέσιμες ενεργές υπό-υπηρεσίες."
 
 msgid "No age block"
 msgstr "Χωρίς ηλικιακό μπλοκάρισμα"
@@ -5423,6 +5438,14 @@ msgid "Norwegian"
 msgstr "Νορβηγικά"
 
 msgid "Not Defined"
+msgstr "Απροσδιόριστο"
+
+#, fuzzy
+msgid "Not Installed"
+msgstr "Εγκατάσταση"
+
+#, fuzzy
+msgid "Not Required"
 msgstr "Απροσδιόριστο"
 
 msgid "Not associated"
@@ -5731,7 +5754,7 @@ msgid "Pitcairn"
 msgstr "Πίτκαιρν"
 
 msgid "Pixels\n"
-msgstr ""
+msgstr "Πίξελ\n"
 
 msgid "Play"
 msgstr "Αναπαραγωγή"
@@ -5739,9 +5762,8 @@ msgstr "Αναπαραγωγή"
 msgid "Play DVD"
 msgstr "Αναπαραγωγή DVD"
 
-#, fuzzy
 msgid "Play DVDs"
-msgstr "Αναπαραγωγή DVD"
+msgstr "Αναπαραγωγή DVDs"
 
 msgid "Play audio-CD..."
 msgstr "Αναπαραγωγή CD ήχου..."
@@ -5934,9 +5956,8 @@ msgstr "Παρακαλώ ρυθμίστε το tuner Q"
 msgid "Please set up tuner R"
 msgstr "Παρακαλώ ρυθμίστε το tuner R"
 
-#, fuzzy
 msgid "Please set your time zone"
-msgstr "Παρακαλώ ρυθμίστε το tuner A"
+msgstr "Παρακαλώ ρυθμίστε τη ζώνη ώρα σας"
 
 msgid "Please setup the following basic configs!"
 msgstr "Παρακαλώ ρυθμίστε τις ακόλουθες βασικές παραμετροποιήσεις!"
@@ -7187,9 +7208,6 @@ msgstr "Επιλογή συσκευής εισόδου."
 msgid "Select interface"
 msgstr "Επιλογή διεπαφής"
 
-msgid "Select locale"
-msgstr "Επιλογή γλώσσας"
-
 msgid "Select location"
 msgstr "Επιλογή τοποθεσίας"
 
@@ -7281,6 +7299,10 @@ msgid "Select the virtual keyboard locale from a menu"
 msgstr "Επιλογή της γλώσσας του εικονικού πληκτρολογίου μέσω μενού"
 
 msgid "Select the virtual keyboard shifted character set"
+msgstr "Επιλογή του σετ χαρακτήρων με shift"
+
+#, fuzzy
+msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr "Επιλογή του σετ χαρακτήρων με shift"
 
 msgid "Select upgrade source"
@@ -7414,9 +7436,6 @@ msgstr "Αναφορά υπηρεσίας"
 msgid "Service scan"
 msgstr "Ανίχνευση υπηρεσιών"
 
-msgid "Service searching"
-msgstr "Αναζήτηση υπηρεσιών"
-
 msgid "Service title mode"
 msgstr "Λειτουργία τίτλου υπηρεσίας"
 
@@ -7549,6 +7568,9 @@ msgstr "Οξύτητα"
 
 msgid "Shellscript"
 msgstr "Script κελύφους"
+
+msgid "Shift"
+msgstr ""
 
 msgid "Short filenames"
 msgstr "Σύντομα ονόματα"
@@ -7928,7 +7950,7 @@ msgid "Social/Political/Economics"
 msgstr "Κοινωνία/Πολιτική/Οικονομία"
 
 msgid "SocketMMI"
-msgstr ""
+msgstr "Θύρα ΜΜΙ"
 
 msgid "SoftCam / CI"
 msgstr "SoftCam / CI"
@@ -9179,6 +9201,10 @@ msgstr "Κατάσταση tuner:"
 
 msgid "Tuner type"
 msgstr "Τύπος tuner"
+
+#, fuzzy
+msgid "Tuners & scanning"
+msgstr "σφάλμα κατά την ανίχνευση"
 
 msgid "Tunisia"
 msgstr "Τυνησία"
@@ -10931,9 +10957,8 @@ msgstr "προεπιλεγμένη μορφή λίστας"
 msgid "list style single line"
 msgstr "λίστα μονής γραμμής"
 
-#, fuzzy
 msgid "listens to hotplug events"
-msgstr "Στοίχιση προγραμμάτων"
+msgstr "ακρόαση συμβάντων σύνδεσης και άμεσης λειτουργίας"
 
 msgid "literature"
 msgstr "λογοτεχνία"
@@ -11319,13 +11344,13 @@ msgstr "μεταπήδηση πίσω"
 msgid "skip forward"
 msgstr "μεταπήδηση εμπρός"
 
-#, fuzzy, python-format
+#, python-format
 msgid "slot%s - %s"
-msgstr "θέση%s - %s λειτουργία 1"
+msgstr "θέση%s - %s"
 
-#, fuzzy, python-format
+#, python-format
 msgid "slot%s - %s (current image)"
-msgstr "θέση%s - %s λειτουργία 1 (τρέχον image)"
+msgstr "θέση%s - %s (τρέχον image)"
 
 #, python-format
 msgid "slot%s - %s (current image) with, backup"
