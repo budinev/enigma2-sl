@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-09-29 09:27+0200\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
 "แก้ไขที่อยู่เพื่อโหลดส่วนปรับปรุง"
@@ -175,6 +175,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -1059,6 +1067,9 @@ msgid "Arabic"
 msgstr "ภาษาอาหรับ"
 
 msgid "Are you sure to purge all deleted userbouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -3015,7 +3026,7 @@ msgstr "ท่านต้องการที่จะนำการตั้
 msgid "Do you want to update your receiver?"
 msgstr ""
 
-msgid "Do you want to upgrade the package:\n"
+msgid "Do you want to update the package:\n"
 msgstr "ยืนยันจะปรับปรุงส่วนประกอบนี้:\n"
 
 msgid "Dolby"
@@ -3046,8 +3057,8 @@ msgid "Done"
 msgstr ""
 
 #, fuzzy, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "เสร็จแล้ว - ติดตั้งปรับปรุงหรือลบ %d รายการ พบข้อผิดพลาด %d รายการ"
 msgstr[1] "เสร็จแล้ว - ติดตั้งปรับปรุงหรือลบ %d รายการ พบข้อผิดพลาด %d รายการ"
 
@@ -3157,7 +3168,7 @@ msgstr ""
 msgid "Edit title"
 msgstr "แก้ไขชื่อเรื่อง"
 
-msgid "Edit upgrade source url."
+msgid "Edit update source url."
 msgstr "แก้ไข URL ของเซอร์พเวอร์เพื่อปรับปรุง"
 
 msgid "Education/Science/..."
@@ -4001,9 +4012,6 @@ msgstr ""
 msgid "Goto 0"
 msgstr "ไปยัง 0"
 
-msgid "Goto:"
-msgstr ""
-
 msgid "Goto X"
 msgstr ""
 
@@ -4029,6 +4037,9 @@ msgid "Goto primetime / now"
 msgstr ""
 
 msgid "Goto specific date/time"
+msgstr ""
+
+msgid "Goto:"
 msgstr ""
 
 msgid "GotoX calibration"
@@ -4757,14 +4768,14 @@ msgstr "ค่าที่ตั้งล่าสุด"
 msgid "Last speed"
 msgstr "ความเร็วล่าสุด"
 
-msgid "Last upgrade: "
+msgid "Last update: "
 msgstr ""
 
 msgid "Latest Commits"
 msgstr ""
 
 #, fuzzy
-msgid "Latest upgrade log"
+msgid "Latest update log"
 msgstr "เลือกที่มาเพื่อปรับปรุง"
 
 msgid "Latitude"
@@ -5659,7 +5670,7 @@ msgstr "ภาษานอร์เว"
 msgid "Norwegian"
 msgstr "ภาษานอร์เว"
 
-msgid "Not Defined"
+msgid "Not defined"
 msgstr ""
 
 #, fuzzy
@@ -5833,7 +5844,7 @@ msgstr ""
 msgid "Overscan wizard"
 msgstr ""
 
-msgid "Overwrite configuration files during software upgrade?"
+msgid "Overwrite configuration files during software update?"
 msgstr ""
 
 #, fuzzy
@@ -6515,9 +6526,6 @@ msgstr "DNS หลัก"
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 msgid "Priority"
 msgstr "สำคัญ"
 
@@ -6664,10 +6672,10 @@ msgstr "ต้องการปิดเครื่องตอนนี้ห
 msgid "Really store at index %2d for current position?"
 msgstr ""
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+msgid "Really update the frontprocessor and reboot now?"
 msgstr ""
 
-msgid "Really upgrade your settop box and reboot now?"
+msgid "Really update your settop box and reboot now?"
 msgstr ""
 
 msgid "Reboot"
@@ -7619,10 +7627,10 @@ msgid "Select the virtual keyboard shifted character set for the next character 
 msgstr ""
 
 #, fuzzy
-msgid "Select upgrade source"
+msgid "Select update source"
 msgstr "เลือกที่มาเพื่อปรับปรุง"
 
-msgid "Select upgrade source to edit."
+msgid "Select update source to edit."
 msgstr "เลือกที่มาเพื่อปรับปรุง"
 
 msgid "Select video input with up/down buttons"
@@ -8034,7 +8042,7 @@ msgstr "แสดงแถบรายการเมื่อเลือกเ
 msgid "Show latest commits"
 msgstr ""
 
-msgid "Show latest upgrade log"
+msgid "Show latest update log"
 msgstr ""
 
 msgid "Show menu or plugin numbers"
@@ -8069,7 +8077,7 @@ msgstr ""
 msgid "Show notification when import channels was successful"
 msgstr ""
 
-msgid "Show packages to be upgraded"
+msgid "Show packages to be updated"
 msgstr ""
 
 msgid "Show picons in channel selection list"
@@ -9118,8 +9126,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -9673,7 +9681,7 @@ msgid "Unable to create the required directories on the media (e.g. USB stick or
 msgstr ""
 
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -9786,7 +9794,7 @@ msgstr ""
 msgid "Updating software catalog"
 msgstr ""
 
-msgid "Upgrading"
+msgid "Updating"
 msgstr "กำลังอัพเกรด"
 
 msgid "Upper case"
@@ -10258,7 +10266,7 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr ""
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -10680,7 +10688,7 @@ msgid "Your current collection will get lost!"
 msgstr ""
 
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -11037,7 +11045,7 @@ msgstr ""
 msgid "copy to bouquets"
 msgstr "คัดลอกเข้าสู่กลุ่มรายการ"
 
-msgid "create directory"
+msgid "Create directory"
 msgstr "สร้างโฟล์เดอร์"
 
 msgid "daily"
@@ -11601,7 +11609,7 @@ msgstr ""
 msgid "remove cable services"
 msgstr ""
 
-msgid "remove directory"
+msgid "Remove directory"
 msgstr "ลบโฟล์เดอร์ออก"
 
 msgid "remove entry"
@@ -11625,7 +11633,7 @@ msgstr "ลบรายการนี้ออก"
 msgid "rename entry"
 msgstr ""
 
-msgid "repeat playlist"
+msgid "Repeat playlist"
 msgstr "กลับไปที่สารบัญ"
 
 msgid "repeated"
@@ -11661,10 +11669,10 @@ msgstr ""
 msgid "running"
 msgstr ""
 
-msgid "save last directory on exit"
+msgid "Save last directory on exit"
 msgstr "บันทึกโฟล์เดอร์ปัจจุบันเมื่อออก"
 
-msgid "save playlist on exit"
+msgid "Save playlist on exit"
 msgstr "บันทึกสารบัญเมื่อออก"
 
 msgid "scan state"
@@ -11713,7 +11721,7 @@ msgstr "แสดงทางเลือกอื่น"
 msgid "show event details"
 msgstr "แสดงรายละเอียดรายการ"
 
-msgid "show mediaplayer on mainmenu"
+msgid "Show media player on main menu"
 msgstr ""
 
 msgid "show softwaremanager in setup menu"
@@ -11792,7 +11800,7 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "sorting of playlists"
+msgid "Sorting of playlists"
 msgstr ""
 
 msgid "special events"
@@ -11813,7 +11821,7 @@ msgstr "มาตรฐาน"
 msgid "start cut here"
 msgstr "ตัดตรงนี้"
 
-msgid "start directory"
+msgid "Start directory"
 msgstr "โฟล์เดอร์เริ่มต้น"
 
 msgid "starts in a few seconds"
@@ -11831,11 +11839,8 @@ msgstr ""
 msgid "successful"
 msgstr ""
 
-msgid "switch to bookmarks"
+msgid "Switch to bookmarks"
 msgstr "เข้าสู่บุ๊คมาร์ค"
-
-msgid "switch to filelist"
-msgstr "เข้าสู่สารบัญไฟล์"
 
 msgid "switch to the next angle"
 msgstr "เลือกมุมมองอันต่อไป"
@@ -11914,8 +11919,11 @@ msgid "until standby/restart"
 msgstr ""
 
 #, fuzzy
-msgid "update bookmarks"
+msgid "Update bookmarks"
 msgstr "ค้นหาอัตโนมัติ"
+
+msgid "used"
+msgstr ""
 
 msgid "user defined"
 msgstr "ผู้ใช้ระบุ"
@@ -12001,6 +12009,9 @@ msgstr "ใช่"
 
 msgid "yes (keep feeds)"
 msgstr "ใช่ (เก็บฟีดนี้ไว้)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 msgid "zap"
 msgstr "เปลี่ยนช่อง"

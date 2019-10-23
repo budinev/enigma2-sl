@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-09-29 09:27+0200\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -48,10 +48,10 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
-"Ändra uppgraderingskällans adress."
+"Ändra uppdateringskällans adress."
 
 msgid ""
 "\n"
@@ -198,6 +198,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -1174,6 +1182,10 @@ msgstr "Arabiska"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Är du säker på att rensa bort alla raderade favoritlistor?"
+
+#, fuzzy
+msgid "Are you sure to reboot to"
+msgstr "Är du säker på att ta bort denna posten?"
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
@@ -3318,8 +3330,8 @@ msgid "Do you want to update your receiver?"
 msgstr "Vill du uppdatera din mottagare?"
 
 #
-msgid "Do you want to upgrade the package:\n"
-msgstr "Vill du uppgradera paketet :\n"
+msgid "Do you want to update the package:\n"
+msgstr "Vill du uppdatera paketet :\n"
 
 msgid "Dolby"
 msgstr ""
@@ -3351,10 +3363,10 @@ msgstr ""
 
 #
 #, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
-msgstr[0] "Klar - installerat, uppgraderat eller avinstallerat %d paket (%s)"
-msgstr[1] "Klar - installerat, uppgraderat eller avinstallerat %d paket (%s)"
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
+msgstr[0] "Klar - installerat, uppdaterat eller avinstallerat %d paket (%s)"
+msgstr[1] "Klar - installerat, uppdaterat eller avinstallerat %d paket (%s)"
 
 #
 msgid "Download plugins"
@@ -3477,8 +3489,8 @@ msgstr "Ändra timer"
 msgid "Edit title"
 msgstr "Ändra titel"
 
-msgid "Edit upgrade source url."
-msgstr "Ändra uppgraderingskällans url."
+msgid "Edit update source url."
+msgstr "Ändra uppdateringskällans url."
 
 msgid "Education/Science/..."
 msgstr "Utbildning / Vetenskap / ..."
@@ -4401,9 +4413,6 @@ msgstr "Gå till"
 msgid "Goto 0"
 msgstr "Gå till 0"
 
-msgid "Goto:"
-msgstr "Gå till :"
-
 msgid "Goto X"
 msgstr "Gå till X"
 
@@ -4431,6 +4440,9 @@ msgstr "Gå till primetime / nu"
 
 msgid "Goto specific date/time"
 msgstr "Gå till specifik datum / tid"
+
+msgid "Goto:"
+msgstr "Gå till :"
 
 msgid "GotoX calibration"
 msgstr "Gå till X kalibrering"
@@ -5213,14 +5225,14 @@ msgstr "Senaste konfiguration"
 msgid "Last speed"
 msgstr "Föregående hastighet"
 
-msgid "Last upgrade: "
-msgstr "Senaste uppgradering :"
+msgid "Last update: "
+msgstr "Senaste uppdatering :"
 
 msgid "Latest Commits"
 msgstr "Senaste commits"
 
 #, fuzzy
-msgid "Latest upgrade log"
+msgid "Latest update log"
 msgstr "Visa senaste uppdateringslogg"
 
 #
@@ -6212,7 +6224,7 @@ msgstr "Norska"
 msgid "Norwegian"
 msgstr "Norska"
 
-msgid "Not Defined"
+msgid "Not defined"
 msgstr "Inte definerad"
 
 #
@@ -6397,8 +6409,8 @@ msgstr "Generellt framsteg :"
 msgid "Overscan wizard"
 msgstr "Överskanningsguide"
 
-msgid "Overwrite configuration files during software upgrade?"
-msgstr "Skriva över konfigurationsfilerna vid mjukvaruuppgradering?"
+msgid "Overwrite configuration files during software update?"
+msgstr "Skriva över konfigurationsfilerna vid mjukvaruuppdatering?"
 
 msgid "Overwrite configuration files?"
 msgstr "Skriva över konfigurationsfilerna ?"
@@ -7165,9 +7177,6 @@ msgstr "Primär DNS"
 msgid "Prime time"
 msgstr "Bästa sändningstid"
 
-msgid "PrimeTime"
-msgstr "Bästa sändningstid"
-
 #
 msgid "Priority"
 msgstr "Prioritet"
@@ -7333,10 +7342,10 @@ msgstr "Verkligen stänga av nu?"
 msgid "Really store at index %2d for current position?"
 msgstr "Vill du verkligen spara vid index %2d för denna position?"
 
-msgid "Really upgrade the frontprocessor and reboot now?"
-msgstr "Vill du verkligen uppgradera frontprocessorn och starta om nu?"
+msgid "Really update the frontprocessor and reboot now?"
+msgstr "Vill du verkligen uppdatera frontprocessorn och starta om nu?"
 
-msgid "Really upgrade your settop box and reboot now?"
+msgid "Really update your settop box and reboot now?"
 msgstr "Vill du verkligen uppdatera din mottagare och starta om nu?"
 
 #
@@ -8388,12 +8397,12 @@ msgid "Select the virtual keyboard shifted character set for the next character 
 msgstr ""
 
 #
-msgid "Select upgrade source"
-msgstr "Ange uppgraderingskälla."
+msgid "Select update source"
+msgstr "Ange uppdateringskälla."
 
 #
-msgid "Select upgrade source to edit."
-msgstr "Ange uppgraderingskälla att ändra."
+msgid "Select update source to edit."
+msgstr "Ange uppdateringskälla att ändra."
 
 #
 msgid "Select video input with up/down buttons"
@@ -8829,7 +8838,7 @@ msgstr "Visa infobalk vid hopp framåt / bakåt"
 msgid "Show latest commits"
 msgstr "Visa senaste commits"
 
-msgid "Show latest upgrade log"
+msgid "Show latest update log"
 msgstr "Visa senaste uppdateringslogg"
 
 #, fuzzy
@@ -8863,7 +8872,7 @@ msgstr ""
 msgid "Show notification when import channels was successful"
 msgstr ""
 
-msgid "Show packages to be upgraded"
+msgid "Show packages to be updated"
 msgstr "Visa paket som skall uppdateras"
 
 msgid "Show picons in channel selection list"
@@ -10665,11 +10674,11 @@ msgid "Unable to create the required directories on the media (e.g. USB stick or
 msgstr ""
 
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
-"Obevakad uppgradering pågår!\n"
+"Obevakad uppdatering pågår!\n"
 "Vänta tills din mottagare startar om\n"
 "Detta kan ta några minuter!"
 
@@ -10796,8 +10805,8 @@ msgid "Updating software catalog"
 msgstr "Uppdaterar mjukvarukatalogen"
 
 #
-msgid "Upgrading"
-msgstr "Uppgradering"
+msgid "Updating"
+msgstr "uppdatering"
 
 msgid "Upper case"
 msgstr ""
@@ -11325,8 +11334,8 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr ""
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
-msgstr "Vid aktiverad laddar enigma2 olänkade favoritlistor. Detta innebär att favoritlistor som är tillgängliga men som inte ingår i bouquet.tv eller bouquet.radio filer kommer fortfarande laddas. Detta gör att du till exempel kan behålla dina egna favoritlistor medan installerade inställningar uppgraderas."
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
+msgstr "Vid aktiverad laddar enigma2 olänkade favoritlistor. Detta innebär att favoritlistor som är tillgängliga men som inte ingår i bouquet.tv eller bouquet.radio filer kommer fortfarande laddas. Detta gör att du till exempel kan behålla dina egna favoritlistor medan installerade inställningar uppdateras."
 
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Vid aktiverad kan BiB stängas med exitknappen."
@@ -11793,11 +11802,11 @@ msgid "Your current collection will get lost!"
 msgstr "Din nuvarande samling kommer försvinna!"
 
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
-"Din frontprocessor kommer att uppgraderas\n"
+"Din frontprocessor kommer att uppdateras\n"
 "Vänta tills din mottagare startat om\n"
 "Detta kan ta några minuter!"
 
@@ -12204,8 +12213,8 @@ msgid "copy to bouquets"
 msgstr "kopiera till favoritlista"
 
 #
-msgid "create directory"
-msgstr "skapa bibliotek"
+msgid "Create directory"
+msgstr "Skapa bibliotek"
 
 #
 msgid "daily"
@@ -12856,8 +12865,8 @@ msgid "remove cable services"
 msgstr "ta bort kabel-tv kanaler"
 
 #
-msgid "remove directory"
-msgstr "ta bort bibliotek"
+msgid "Remove directory"
+msgstr "Ta bort bibliotek"
 
 #
 msgid "remove entry"
@@ -12885,8 +12894,8 @@ msgid "rename entry"
 msgstr "döp om kanal"
 
 #
-msgid "repeat playlist"
-msgstr "upprepa spellista"
+msgid "Repeat playlist"
+msgstr "Upprepa spellista"
 
 #
 msgid "repeated"
@@ -12926,12 +12935,12 @@ msgid "running"
 msgstr "Varning"
 
 #
-msgid "save last directory on exit"
-msgstr "spara sista biblioteket vid avslut"
+msgid "Save last directory on exit"
+msgstr "Spara sista biblioteket vid avslut"
 
 #
-msgid "save playlist on exit"
-msgstr "spara spellista vid avslut"
+msgid "Save playlist on exit"
+msgstr "Spara spellista vid avslut"
 
 #
 msgid "scan state"
@@ -12987,8 +12996,8 @@ msgstr "visa alternativ"
 msgid "show event details"
 msgstr "visa programdetaljer"
 
-msgid "show mediaplayer on mainmenu"
-msgstr "visa mediaspelaren i huvudmenyn"
+msgid "Show media player on main menu"
+msgstr "Visa mediaspelaren i huvudmenyn"
 
 msgid "show softwaremanager in setup menu"
 msgstr "visar mjukvaruhanterare i inställningsmeny"
@@ -13071,8 +13080,8 @@ msgstr "sociala / politiska frågor / ekonomi (allmänt)"
 msgid "social/spiritual science"
 msgstr "social / andlig vetenskap"
 
-msgid "sorting of playlists"
-msgstr "sortering av spellistor"
+msgid "Sorting of playlists"
+msgstr "Sortering av spellistor"
 
 msgid "special events"
 msgstr "speciella evenemang"
@@ -13095,8 +13104,8 @@ msgid "start cut here"
 msgstr "startklipp här"
 
 #
-msgid "start directory"
-msgstr "startbibliotek"
+msgid "Start directory"
+msgstr "Startbibliotek"
 
 #, fuzzy
 msgid "starts in a few seconds"
@@ -13116,12 +13125,8 @@ msgid "successful"
 msgstr "lyckad"
 
 #
-msgid "switch to bookmarks"
-msgstr "byt till bokmärke"
-
-#
-msgid "switch to filelist"
-msgstr "byt till fillista"
+msgid "Switch to bookmarks"
+msgstr "Byt till bokmärke"
 
 #
 msgid "switch to the next angle"
@@ -13212,8 +13217,11 @@ msgid "until standby/restart"
 msgstr "tills viloläge / omstart"
 
 #, fuzzy
-msgid "update bookmarks"
+msgid "Update bookmarks"
 msgstr "Automatisk Sökning"
+
+msgid "used"
+msgstr ""
 
 #
 msgid "user defined"
@@ -13310,6 +13318,9 @@ msgstr "ja"
 #
 msgid "yes (keep feeds)"
 msgstr "ja (behåll feeds)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 #
 msgid "zap"

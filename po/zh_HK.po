@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-09-29 09:27+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -38,7 +38,7 @@ msgstr ""
 
 msgid ""
 "\n"
-"Edit the upgrade source address."
+"Edit the update source address."
 msgstr ""
 "\n"
 "編輯升級源地址。"
@@ -170,6 +170,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -1033,6 +1041,9 @@ msgid "Arabic"
 msgstr "阿拉伯語"
 
 msgid "Are you sure to purge all deleted userbouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -2923,7 +2934,7 @@ msgstr ""
 msgid "Do you want to update your receiver?"
 msgstr ""
 
-msgid "Do you want to upgrade the package:\n"
+msgid "Do you want to update the package:\n"
 msgstr " 是否升級套裝軟體:\n"
 
 msgid "Dolby"
@@ -2955,8 +2966,8 @@ msgid "Done"
 msgstr ""
 
 #, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -3064,7 +3075,7 @@ msgstr ""
 msgid "Edit title"
 msgstr "修改標題"
 
-msgid "Edit upgrade source url."
+msgid "Edit update source url."
 msgstr "編輯升級源地址."
 
 msgid "Education/Science/..."
@@ -3885,9 +3896,6 @@ msgstr ""
 msgid "Goto 0"
 msgstr "轉到 0"
 
-msgid "Goto:"
-msgstr ""
-
 msgid "Goto X"
 msgstr ""
 
@@ -3913,6 +3921,9 @@ msgid "Goto primetime / now"
 msgstr ""
 
 msgid "Goto specific date/time"
+msgstr ""
+
+msgid "Goto:"
 msgstr ""
 
 msgid "GotoX calibration"
@@ -4612,14 +4623,14 @@ msgstr "最後一次正確配置"
 msgid "Last speed"
 msgstr "最快速度"
 
-msgid "Last upgrade: "
+msgid "Last update: "
 msgstr ""
 
 msgid "Latest Commits"
 msgstr ""
 
 #, fuzzy
-msgid "Latest upgrade log"
+msgid "Latest update log"
 msgstr "最後更新"
 
 msgid "Latitude"
@@ -5486,7 +5497,7 @@ msgstr "挪威語"
 msgid "Norwegian"
 msgstr "挪威語"
 
-msgid "Not Defined"
+msgid "Not defined"
 msgstr ""
 
 #, fuzzy
@@ -5655,7 +5666,7 @@ msgstr ""
 msgid "Overscan wizard"
 msgstr ""
 
-msgid "Overwrite configuration files during software upgrade?"
+msgid "Overwrite configuration files during software update?"
 msgstr ""
 
 msgid "Overwrite configuration files?"
@@ -6315,9 +6326,6 @@ msgstr "主 DNS"
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 msgid "Priority"
 msgstr "次序"
 
@@ -6462,10 +6470,10 @@ msgstr "立即關機?"
 msgid "Really store at index %2d for current position?"
 msgstr ""
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+msgid "Really update the frontprocessor and reboot now?"
 msgstr ""
 
-msgid "Really upgrade your settop box and reboot now?"
+msgid "Really update your settop box and reboot now?"
 msgstr ""
 
 msgid "Reboot"
@@ -7389,10 +7397,10 @@ msgstr ""
 msgid "Select the virtual keyboard shifted character set for the next character only"
 msgstr ""
 
-msgid "Select upgrade source"
+msgid "Select update source"
 msgstr ""
 
-msgid "Select upgrade source to edit."
+msgid "Select update source to edit."
 msgstr "選擇並編輯升級來源"
 
 msgid "Select video input with up/down buttons"
@@ -7786,7 +7794,7 @@ msgstr "快退 / 快進時顯示資訊條"
 msgid "Show latest commits"
 msgstr ""
 
-msgid "Show latest upgrade log"
+msgid "Show latest update log"
 msgstr ""
 
 msgid "Show menu or plugin numbers"
@@ -7819,7 +7827,7 @@ msgstr ""
 msgid "Show notification when import channels was successful"
 msgstr ""
 
-msgid "Show packages to be upgraded"
+msgid "Show packages to be updated"
 msgstr ""
 
 msgid "Show picons in channel selection list"
@@ -8512,9 +8520,6 @@ msgstr ""
 msgid "Switch to TV mode"
 msgstr ""
 
-msgid "Switch to filelist"
-msgstr ""
-
 msgid "Switch to next bouquet"
 msgstr ""
 
@@ -8827,8 +8832,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -9357,7 +9362,7 @@ msgid "Unable to create the required directories on the media (e.g. USB stick or
 msgstr ""
 
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -9473,7 +9478,7 @@ msgstr ""
 msgid "Updating software catalog"
 msgstr "更新軟體目錄"
 
-msgid "Upgrading"
+msgid "Updating"
 msgstr "升級"
 
 msgid "Upper case"
@@ -9913,7 +9918,7 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr ""
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -10329,7 +10334,7 @@ msgid "Your current collection will get lost!"
 msgstr "您當前的收集將丟失!"
 
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -10683,7 +10688,7 @@ msgstr ""
 msgid "copy to bouquets"
 msgstr "複製到自定義組"
 
-msgid "create directory"
+msgid "Create directory"
 msgstr "創建目錄"
 
 msgid "daily"
@@ -11246,7 +11251,7 @@ msgstr ""
 msgid "remove cable services"
 msgstr ""
 
-msgid "remove directory"
+msgid "Remove directory"
 msgstr "移除目錄"
 
 msgid "remove entry"
@@ -11270,7 +11275,7 @@ msgstr "移除這個標記"
 msgid "rename entry"
 msgstr ""
 
-msgid "repeat playlist"
+msgid "Repeat playlist"
 msgstr "重複播放列表"
 
 msgid "repeated"
@@ -11307,10 +11312,10 @@ msgstr ""
 msgid "running"
 msgstr "正在運行"
 
-msgid "save last directory on exit"
+msgid "Save last directory on exit"
 msgstr "退出時保存目錄"
 
-msgid "save playlist on exit"
+msgid "Save playlist on exit"
 msgstr "退出時保存播放列表"
 
 msgid "scan state"
@@ -11359,7 +11364,7 @@ msgstr "顯示選項"
 msgid "show event details"
 msgstr "顯示事件詳細內容"
 
-msgid "show mediaplayer on mainmenu"
+msgid "Show media player on main menu"
 msgstr ""
 
 msgid "show softwaremanager in setup menu"
@@ -11438,7 +11443,7 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "sorting of playlists"
+msgid "Sorting of playlists"
 msgstr ""
 
 msgid "special events"
@@ -11459,7 +11464,7 @@ msgstr "標準"
 msgid "start cut here"
 msgstr "從這裏開始剪輯"
 
-msgid "start directory"
+msgid "Start directory"
 msgstr "開始目錄"
 
 #, fuzzy
@@ -11478,10 +11483,10 @@ msgstr ""
 msgid "successful"
 msgstr ""
 
-msgid "switch to bookmarks"
+msgid "Switch to bookmarks"
 msgstr "切換到書簽"
 
-msgid "switch to filelist"
+msgid "Switch to filelist"
 msgstr "切換到檔列表"
 
 msgid "switch to the next angle"
@@ -11560,8 +11565,11 @@ msgid "until standby/restart"
 msgstr ""
 
 #, fuzzy
-msgid "update bookmarks"
+msgid "Update bookmarks"
 msgstr "自動掃描"
+
+msgid "used"
+msgstr ""
 
 msgid "user defined"
 msgstr "用戶定義"
@@ -11647,6 +11655,9 @@ msgstr "是"
 
 msgid "yes (keep feeds)"
 msgstr "是 (保留)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 msgid "zap"
 msgstr "切換"
