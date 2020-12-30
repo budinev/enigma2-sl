@@ -11,7 +11,7 @@ from Components.SystemInfo import SystemInfo
 from Tools.Directories import SCOPE_CONFIG, SCOPE_CURRENT_LCDSKIN, SCOPE_CURRENT_SKIN, SCOPE_FONTS, SCOPE_SKIN, SCOPE_SKIN_IMAGE, resolveFilename
 from Tools.Import import my_import
 from Tools.LoadPixmap import LoadPixmap
-DEFAULT_SKIN = SystemInfo["HasFullHDSkinSupport"] and "CinoGriPLiFhd/skin.xml" or "PLi-HD/skin.xml"  # SD hardware is no longer supported by the default skin.
+DEFAULT_SKIN = SystemInfo["HasFullHDSkinSupport"] and "Pd1loi-HD-night/skin.xml" or "PLi-HD/skin.xml"  # SD hardware is no longer supported by the default skin.
 EMERGENCY_SKIN = "skin_default/skin.xml"
 EMERGENCY_NAME = "Stone II"
 DEFAULT_DISPLAY_SKIN = "skin_default/skin_display.xml"
