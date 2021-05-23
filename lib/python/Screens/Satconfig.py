@@ -8,7 +8,7 @@ from Components.Button import Button
 from Components.Label import Label
 from Components.UsageConfig import showrotorpositionChoicesUpdate
 from Components.SelectionList import SelectionList, SelectionEntryComponent
-from Components.config import getConfigListEntry, config, ConfigNothing, ConfigYesNo, configfile, NoSave, ConfigSelection
+from Components.config import getConfigListEntry, config, ConfigNothing, ConfigYesNo, configfile, ConfigBoolean, ConfigSelection
 from Components.Sources.List import List
 from Components.Sources.StaticText import StaticText
 from Screens.MessageBox import MessageBox
@@ -70,7 +70,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 				nim.powerMeasurement.value = False
 				nim.powerMeasurement.save()
 		if not hasattr(self, 'additionalMotorOptions'):
-			self.additionalMotorOptions = ConfigYesNo(False)
+			self.additionalMotorOptions = ConfigBoolean(default=any([x.value != x.default for x in (nim.turningspeedH, nim.turningspeedV, nim.tuningstepsize, nim.rotorPositions)]), descriptions={False: _("Show sub-menu"), True: _("Hide sub-menu")})
 		self.showAdditionalMotorOptions = getConfigListEntry(self.indent % _("Extra motor options"), self.additionalMotorOptions, _("Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."))
 		self.list.append(self.showAdditionalMotorOptions)
 		if self.additionalMotorOptions.value:
@@ -509,7 +509,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 					else:
 						self.list.append(getConfigListEntry(self.indent % _("Stored position"), Sat.rotorposition, _("Enter the number stored in the positioner that corresponds to this satellite.")))
 					if not hasattr(self, 'additionalMotorOptions'):
-						self.additionalMotorOptions = ConfigYesNo(False)
+						self.additionalMotorOptions = ConfigBoolean(default=any([x.value != x.default for x in (currLnb.turningspeedH, currLnb.turningspeedV, currLnb.tuningstepsize, currLnb.rotorPositions)]), descriptions={False: _("Show sub-menu"), True: _("Hide sub-menu")})
 					self.showAdditionalMotorOptions = getConfigListEntry(self.indent % _("Extra motor options"), self.additionalMotorOptions, _("Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move to another satellite."))
 					self.list.append(self.showAdditionalMotorOptions)
 					if self.additionalMotorOptions.value:
@@ -661,6 +661,8 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 	def isChanged(self):
 		is_changed = False
 		for x in self["config"].list:
+			if x == self.showAdditionalMotorOptions:
+				continue
 			is_changed |= x[1].isChanged()
 		return is_changed
 
@@ -772,11 +774,12 @@ class NimSelection(Screen):
 		else:
 			nim = self["nimlist"].getCurrent()
 			nim = nim and nim[3]
-			nimConfig = nimmanager.getNimConfig(nim.slot)
-			if nim.isFBCLink() and nimConfig.configMode.value == "nothing" and not getLinkedSlotID(nim.slot) == -1:
-				return
-			if nim is not None and (not nim.empty or nim.isMultiType()) and nim.isSupported():
-				self.session.openWithCallback(boundFunction(self.NimSetupCB, self["nimlist"].getIndex()), self.resultclass, nim.slot)
+			if nim is not None:
+				nimConfig = nimmanager.getNimConfig(nim.slot)
+				if nim.isFBCLink() and nimConfig.configMode.value == "nothing" and not getLinkedSlotID(nim.slot) == -1:
+					return
+				if (not nim.empty or nim.isMultiType()) and nim.isSupported():
+					self.session.openWithCallback(boundFunction(self.NimSetupCB, self["nimlist"].getIndex()), self.resultclass, nim.slot)
 
 	def NimSetupCB(self, index=None):
 		self.updateList(index)
